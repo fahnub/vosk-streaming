@@ -1,0 +1,20 @@
+{
+  "name": "mic-to-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node -r dotenv/config ./src dotenv_config_path=./.env",
+    "model": "node -r dotenv/config ./clasifier-model-builder.js dotenv_config_path=./.env"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ffi-napi": "^4.0.3",
+    "mic": "^2.1.2",
+    "ref-napi": ">=2.0.0",
+    "rx-from-csv": "^1.0.0",
+    "rxjs": "^7.5.5"
+  }
+}
